@@ -17,7 +17,7 @@ resource "aws_synthetics_canary" "this" {
   zip_file             = "/tmp/${local.zip}"
   execution_role_arn   = aws_iam_role.this.arn
   handler              = "heartbeat_canary.handler"
-  runtime_version      = "syn-python-selenium-2.0"
+  runtime_version      = "syn-python-selenium-3.0"
   start_canary         = true
 
   run_config {
